@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+ <header>
+    <h1>Product Marketplace</h1>
+    <p>Find the best products you need!</p>
+</header>
+<main>
+    <section class="filters">
+        <input type="text" id="searchInput" placeholder="Search products...">
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+        </select>
+
+        <select id="sortSelect">
+            <option value="default">Default Sorting</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+        </select>
+
+        <label for="priceRange">Maximum Price:</label>
+        <input type="range" id="priceRange" min="0" max="1000" value="1000">
+        <span id="priceValue">$1000</span>
+    </section>
+
+    <section id="productList" class="product-list">
+       
+    </section>
+
+    <aside class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="cartTotal">0.00</span></p>
+    </aside>
+</main>
+</body>
+</html>
